@@ -52,7 +52,7 @@ fieldset {
 
 .main {
   height: 100vh;
-  background-color: rgb(183, 131, 68);
+  background: linear-gradient(140deg, rgb(195, 0, 255), rgb(255, 106, 0));
 }
 
 nav {
@@ -66,6 +66,9 @@ nav {
   inset: auto 0;
   z-index: 5;
 }
+section {
+  padding-inline: 1rem;
+}
 ul {
   display: flex;
 }
@@ -78,26 +81,35 @@ a {
   place-items: center;
   height: 100%;
 }
+.hero__headline {
+  text-transform: uppercase;
+}
 .hero__box {
   color: #fff;
+  background: #202352;
+  padding: 2rem;
+  border-radius: 5px;
 }
 button {
   border: 1px solid white;
   padding: 0.8rem 3rem;
   border-radius: 100vmax;
-  background-color: #ffffff39;
+  background-color: #ffffff67;
   color: #fff;
   margin-top: 1.5rem;
 }
 .offer {
   position: relative;
   height: 100%;
+  display: grid;
+  place-items: center;
 }
 .offer::before {
   content: "";
   position: absolute;
   inset: 0;
   background: url("/image.jpg") no-repeat center center/cover;
+  z-index: -2;
 }
 .offer::after {
   content: "";
@@ -108,4 +120,19 @@ button {
     rgba(0, 0, 0, 0.703),
     transparent
   );
+  z-index: -1;
+}
+.offer__box {
+  background: hsla(236, 31%, 17%, 0.675);
+  padding: 2rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.offer__box h2 {
+  margin-bottom: 2rem;
+}
+.offer__box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
