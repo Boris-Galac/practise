@@ -136,3 +136,7 @@ button {
   flex-direction: column;
   gap: 1.5rem;
 }
+.offer__box li {
+  background: #000;
+  padding: 10px;
+}
