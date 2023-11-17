@@ -79,7 +79,7 @@ a {
 .hero {
   display: grid;
   place-items: center;
-  height: 100dvh;
+  height: 100svh;
   background: linear-gradient(140deg, rgb(195, 0, 255), rgb(255, 106, 0));
 }
 .hero__headline {
